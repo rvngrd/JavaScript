@@ -20,9 +20,18 @@
                 text-align: center;
                 color : white;
             }
+            .container {  
+                text-align: center;  
+                position: absolute;
+                top: 30%;
+                left: 50%;
+            } 
         </style>
     </head>
     <body>
-        <h1>SALAM :D</h1>
+        <h1 id="demo">SALAM KHOOBI? :D</h1>
+        <div class="container">
+            <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me!</button>
+        </div>   
     </body>
 </html>
