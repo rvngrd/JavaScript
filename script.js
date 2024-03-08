@@ -150,3 +150,11 @@ var carName;
     let text = `I'm turning ${x} tomorrow`;
     console.log(text);
 }
+
+// Breaking Long Lines
+// For readability, programmers often like to avoid long code lines.
+// A safe way to break up a statement is after an operator.
+/*
+    document.getElementById("demo").innerHTML =
+    "Hello Dolly!";
+*/
