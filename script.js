@@ -108,3 +108,8 @@ var carName;
     let y = false;
     console.log(x && y);
 }
+
+// Operator Precedence
+// Multiplication (*) and division (/) have higher precedence than addition (+) and subtraction (-).
+// And (as in school mathematics) the precedence can be changed by using parentheses
+// When many operations have the same precedence (like addition and subtraction or multiplication and division), they are computed from left to right
