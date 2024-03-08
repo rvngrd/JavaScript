@@ -46,3 +46,26 @@ console.log(cars);
 carName = "Volvo";
 var carName;
 // Using a const variable before it is declared will result in a ReferenceError
+
+// JavaScript has 8 Datatypes
+/*
+1. String
+2. Number
+3. Bigint
+4. Boolean
+5. Undefined
+6. Null
+7. Symbol
+8. Object
+*/
+{
+    let x = true;
+    console.log(typeof x);
+    let y = null;
+    console.log(typeof y);
+    let z = 16;
+    z += "Volvo";   // Appends the number to the string
+    console.log(z);
+    let m;
+    console.log(typeof m); //undefined
+}
