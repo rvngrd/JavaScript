@@ -167,3 +167,20 @@ doroste!`;
     console.log(text1);
     console.log(text2); 
 }
+
+// == vs. ===
+/*
+==	equal to
+===	equal value and equal type
+!=	not equal
+!==	not equal value or not equal type
+*/
+{
+    let x = "15";
+    if (x === 15) {
+        console.log("ok");
+    } else {
+        console.log("not ok");
+    }
+
+}
