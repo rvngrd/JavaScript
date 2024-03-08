@@ -158,3 +158,12 @@ var carName;
     document.getElementById("demo").innerHTML =
     "Hello Dolly!";
 */
+
+// New line in string
+{
+    let text1 = `aha injoori
+doroste!`;
+    let text2 = "aha injoori \n\doroste!";
+    console.log(text1);
+    console.log(text2); 
+}
