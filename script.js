@@ -129,3 +129,24 @@ var carName;
 {
     let x = `salam 'Iman' va "Omid"`;
 }
+
+// String
+{
+    let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let length = text.length;
+    console.log(length);
+}
+// \'	'	Single quote
+// \"	"	Double quote
+// \\	\	Backslash
+// example
+{
+    let text = "We are the so-called \"Vikings\" from the north.";
+    console.log(text);
+}
+// Using a variable inside a string with ${}
+{
+    let x = 18;
+    let text = `I'm turning ${x} tomorrow`;
+    console.log(text);
+}
