@@ -124,3 +124,8 @@ var carName;
 // |   or
 // ^   xor
 
+// Templates were introduced with ES6 (JavaScript 2016)
+// Templates allow single and double quotes inside a string
+{
+    let x = `salam 'Iman' va "Omid"`;
+}
