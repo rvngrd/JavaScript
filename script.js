@@ -15,9 +15,28 @@ console.log(firstName);
     x = 12;
 }
 console.log(x);
-console.log(b);     //Uncaught ReferenceError: b is not defined
+// console.log(b);     //Uncaught ReferenceError: b is not defined
 
 // Variables defined with let can not be redeclared
 // Variables defined with var can be redeclared
 var y = "John Doe";
 var y = 0;
+
+// Declaring a const(JavaScript const variables must be assigned a value when they are declared)
+// Declaring a variable with const is similar to let when it comes to Block Scope(Function Scope)
+const PI = 3.14;
+
+/* Use const when you declare:
+A.new Array
+B.new Object
+C.new Function
+D.new RegExp 
+*/
+const cars = ["Saab", "Volvo", "BMW"];
+// You can change an element:
+cars[0] = "Toyota";
+// You can add an element:
+cars.push("Audi");
+console.log(cars);
+
+
