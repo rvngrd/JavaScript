@@ -235,3 +235,17 @@ function toCelsius(fahrenheit) {
   }
 let value = toCelsius(77);
 console.log(value);
+
+// Expression Function
+/*
+The Function Expression allows us to create an anonymous function 
+that doesn’t have any function name which is the main difference between Function Expression and Function Declaration
+*/
+
+let calMul = function Mul(x, y) {
+  let z = x * y;
+  return z;
+}
+
+console.log("Multiplication : " + calMul(7, 4));   // you can call the function with the variable name 
+// you will get an error if you use expression function before declaring it(e.g, moving line above before let calMul)
