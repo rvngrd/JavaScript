@@ -249,3 +249,10 @@ let calMul = function Mul(x, y) {
 
 console.log("Multiplication : " + calMul(7, 4));   // you can call the function with the variable name 
 // you will get an error if you use expression function before declaring it(e.g, moving line above before let calMul)
+
+// Arrow Function 
+// is concise way of writing JavaScript functions in shorter way
+let age = ( birth = 2000 ) => {   // default value is 2000
+  return 2024 - birth;
+}
+console.log(age(2001));
