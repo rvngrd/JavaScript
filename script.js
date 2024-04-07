@@ -256,3 +256,22 @@ let age = ( birth = 2000 ) => {   // default value is 2000
   return 2024 - birth;
 }
 console.log(age(2001));
+
+// Calling a function inside of another function
+function ageFn(newAge) {
+  let myNewAge = newAge + 3;
+  return myNewAge;
+}
+
+function salaryFn(newSalary) {
+  let myNewSalary = newSalary + 200;
+  return myNewSalary;
+}
+
+function myDetails(myAge, mySalary) {
+  let myNewAge = ageFn(myAge);
+  let myNewSalary = salaryFn(mySalary);
+  console.log(`my age is ${myNewAge}, and my salary is ${myNewSalary}`);
+}
+
+myDetails(20, 700);
