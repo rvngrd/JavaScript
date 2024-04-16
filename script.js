@@ -1,7 +1,7 @@
 // alert("JavaScript Tutorial")
 
 // declaring variables
-let a = "aha";
+let a = "meh";
 //camelCase is a variable naming convention where the first word is always in lowercase and every other word starts with a capital letter
 let firstName = "Iman";
 console.log(firstName);
@@ -299,4 +299,73 @@ myDetails(20, 700);
   In JavaScript, arrays use numbered indexes.  
   In JavaScript, objects use named indexes.
   */
+}
+
+// JavaScript Array Methods
+{
+  const fruits = ["Banana", "Orange", "Apple", "Mango"];
+  // toString() converts an array to a string of (comma separated) array values.
+  console.log(fruits.toString()); // Result: Banana,Orange,Apple,Mango 
+  // The at() method returns the same as []
+  let fruit1 = fruits.at(2);
+  let fruit2 = fruits[2];
+  console.log(fruit1 === fruit2); // returns true
+  // join(), It behaves just like toString(), but in addition you can specify the separator
+  console.log(fruits.join(" - "));
+  // The pop() method removes the last element from an array
+  fruits.pop();
+  console.log(fruits); // Mango will be popped
+  // saving the popped element
+  let x = fruits.pop();
+  console.log(x);
+  // The push() method adds a new element to an array (at the end)
+  let y = fruits.push("Kiwi");
+  console.log(fruits);
+  // The push() method returns the new array length
+  console.log(y);
+  // The shift() method removes the first array element and "shifts" all other elements to a lower index
+  let z = fruits.shift();
+  console.log(fruits);
+  // The shift() method returns the value that was "shifted out
+  console.log(z); // returns "Banana"
+  // The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements
+  let a = fruits.unshift("Lemon");
+  console.log(fruits);
+  // The unshift() method returns the new array length
+  console.log(a);
+  // The length property provides an easy way to append a new element to an array
+  fruits[fruits.length] = "Apple";
+  console.log(fruits);
+  // The concat() method creates a new array by merging (concatenating) existing arrays
+  // The concat() method can take any number of array arguments
+  const myGirls = ["Zahra", "Sahar"];
+  const myBoys = ["Iman", "Sina", "Reza"];
+  const myChildren = myGirls.concat(myBoys);
+  console.log(myChildren);
+  // The concat() method can also take strings as arguments
+  const arr1 = ["Emil", "Tobias", "Linus"];
+  const arr2 = arr1.concat("Peter");
+  console.log(arr2);
+  // The splice() method can be used to add new items to an array
+  const fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+  fruits2.splice(2, 0, "Lemon", "Kiwi");
+  console.log(fruits2);
+  /*
+  ------------------------------------
+  The first parameter (2) defines the position where new elements should be added (spliced in).
+  The second parameter (0) defines how many elements should be removed.
+  The rest of the parameters ("Lemon" , "Kiwi") define the new elements to be added.
+  ------------------------------------
+  */
+ // With clever parameter setting, you can use splice() to remove elements without leaving "holes" in the array
+ fruits2.splice(0, 1);
+ console.log(fruits2);
+ // The slice() method slices out a piece of an array into a new array
+ // The method selects elements from the start argument, and up to (but not including) the end argument
+ const arr3 = fruits.slice(1, 3);  // Slice out a part of an array starting from array element 1 to 3(not including 3)
+ console.log(arr3);
+ // The sort() method sorts an array alphabetically
+ console.log(fruits.sort());
+ // The reverse() method reverses the elements in an array
+ console.log(fruits.reverse());
 }
