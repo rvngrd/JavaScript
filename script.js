@@ -1,4 +1,4 @@
-// alert("hello mashti :D")
+// alert("JavaScript Tutorial")
 
 // declaring variables
 let a = "aha";
@@ -241,12 +241,10 @@ console.log(value);
 The Function Expression allows us to create an anonymous function 
 that doesn’t have any function name which is the main difference between Function Expression and Function Declaration
 */
-
 let calMul = function Mul(x, y) {
   let z = x * y;
   return z;
 }
-
 console.log("Multiplication : " + calMul(7, 4));   // you can call the function with the variable name 
 // you will get an error if you use expression function before declaring it(e.g, moving line above before let calMul)
 
@@ -273,5 +271,32 @@ function myDetails(myAge, mySalary) {
   let myNewSalary = salaryFn(mySalary);
   console.log(`my age is ${myNewAge}, and my salary is ${myNewSalary}`);
 }
-
 myDetails(20, 700);
+
+// Arrays
+// An array is a special variable, which can hold more than one value
+// It is a common practice to declare arrays with the const keyword
+{
+  const cars = ["Saab", "Volvo", "BMW"];
+  console.log(cars);
+  // Access to elements, starts from 0
+  console.log(cars[1]);
+}
+// Using the JavaScript Keyword new
+// For simplicity, readability and execution speed, use the array literal method
+{
+  const cars = new Array("Saab", "Volvo", "BMW");
+  console.log(cars.length);
+  // Changing an Array Element
+  cars[0] = "Benz";
+  console.log(cars);
+  // Arrays are Objects
+  console.log(typeof(cars));
+  // How to Recognize an Array
+  console.log(Array.isArray(cars));  // returns true
+  // The Difference Between Arrays and Objects
+  /*
+  In JavaScript, arrays use numbered indexes.  
+  In JavaScript, objects use named indexes.
+  */
+}
