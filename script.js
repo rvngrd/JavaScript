@@ -369,3 +369,37 @@ myDetails(20, 700);
  // The reverse() method reverses the elements in an array
  console.log(fruits.reverse());
 }
+
+// Objects
+// Objects are variables too. But objects can contain many values
+// This code assigns many values (Fiat, 500, white) to a variable named car
+{
+  const car1 = {type:"Fiat", model:"500", color:"white"};
+  const car2 = {
+    type:"BMW",
+    color:"White",
+    models:['x4', 'x6']
+  };
+  console.log(car2);
+  // You can access object properties in two ways:
+  // objectName["propertyName"] or objectName.property
+  console.log(car1.model);
+  console.log(car2["models"][1]);
+  // A method is a function stored as a property
+  /*
+  In the example below, this refers to the person object:
+  this.firstName means the firstName property of person.
+  this.lastName means the lastName property of person
+  */
+  const person = {
+    firstName: "John",
+    lastName : "Doe",
+    id       : 5566,
+    fullName : function() {
+      return this.firstName + " " + this.lastName;
+    }
+  };
+  // You access an object method with the following syntaxes : objectName.methodName() or objectName['methodName']()
+  console.log(person.fullName());
+  console.log(person['fullName']());
+}
