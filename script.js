@@ -403,3 +403,112 @@ myDetails(20, 700);
   console.log(person.fullName());
   console.log(person['fullName']());
 }
+
+// For Loop
+// Loops are handy, if you want to run the same code over and over again, each time with a different value
+{
+  // Example 1
+  let text1 = "";
+  for (let i = 0; i < 5; i++) {
+    text1 += "The number is " + i + ", ";
+  }
+  console.log(text1);
+  // Example 2
+  const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+  let text2 = "";
+  for (let i = 0; i < cars.length; i++) {
+  text2 += cars[i] + "<br>";
+  }
+  console.log(text2);
+  // Example 3, Maximum of an array
+  var numbers = [12, 4, 14, 18, 24, 31, 22, 28];
+  let max = 0;
+  for (let i = 0; i <numbers.length; i++) {
+    if (numbers[i] > max) {
+      max = numbers[i];
+    }
+  }
+  console.log(max);
+}
+
+// While Loop
+// The while loop loops through a block of code as long as a specified condition is true
+{
+  let text = "";
+  let i = 0;  
+  while (i < 6) {
+    if (i == 5) {
+      text += "The number is " + i;
+      i++;
+    }
+    else {
+    text += "The number is " + i + ", ";
+    i++;
+    }
+  }
+  console.log(text);
+}
+
+// Do While Loop
+/*
+The loop will always be executed at least once, even if the condition is false,
+because the code block is executed before the condition is tested
+*/
+{
+  let i = 0;
+  do {
+    console.log("Hi!");
+    i++;
+  }
+  while (i < 5);
+}
+
+// Break Statement
+// The break statement "jumps out" of a loop
+{
+  for (let i = 0; i < 10; i++) {
+    if (i === 3) { break; }
+    console.log("break" + i);
+  }
+}
+
+// Continue Statement
+// The continue statement "jumps over" one iteration in the loop
+{
+  for (let i = 0; i < 8; i++) {
+    if (i === 3) { continue; }
+    console.log("continue" + i);
+  }
+}
+
+// The For Of Loop
+// The JavaScript for of statement loops through the values of an iterable object
+// It lets you loop over iterable data structures such as Arrays, Strings, Maps, NodeLists, and more
+{
+  const cars = ["BMW", "Volvo", "Mini"];
+  let text = "";
+  for (let x of cars) {
+    text += x + ",";
+  }
+  console.log(text);
+  // Looping over a String
+  let language = "JavaScript";
+  let text1 = "";
+  for (let x of language) {
+  text1 += x;
+  }
+  console.log(text1);
+}
+
+// JavaScript For In
+// The JavaScript for in statement loops through the properties of an Object
+{
+  const person = {fname:"Iman", lname:"Beigy", age:22};
+  let text = "";
+  for (let x in person) {
+    text += person[x];
+  }
+  console.log(Object.values(person));
+  console.log(Object.keys(person));
+  console.log(text);
+}
